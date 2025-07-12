@@ -2,7 +2,7 @@
 srv1 ansible_host=13.61.0.79
 
 [redhat_servers]
-srv2 ansible_host=1.1.1.1
+srv2 ansible_host=13.51.171.155
 
 
 [all:vars]
@@ -13,4 +13,4 @@ ansible_user=ubuntu
 
 
 [redhat_servers:vars]
-ansible_user=ec2_user
+ansible_user=ec2-user
