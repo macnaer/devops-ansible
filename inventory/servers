@@ -1,12 +1,12 @@
 [ubuntu_servers]
-srv1 ansible_host=13.62.58.237
+srv1 ansible_host=13.61.0.79
 
 [redhat_servers]
 srv2 ansible_host=1.1.1.1
 
 
 [all:vars]
-ansible_ssh_private_key_file=/etc/ansible/keys/Stockholm_2.pem
+ansible_ssh_private_key_file=/home/master/devops-ansible/keys/Stockholm_2.pem
 
 [ubuntu_servers:vars]
 ansible_user=ubuntu 
