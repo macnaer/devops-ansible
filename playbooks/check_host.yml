@@ -1,0 +1,13 @@
+---
+  - hosts: all
+    become: yes
+    tasks:
+      - name: get server hostname
+        command: hostname
+        register: command_output
+      - debug: msg="{{command_output.stdout}}"
+
+      - name: OS-Release
+        command: cat /etc/os-release
+        register: command_release
+      - debug: msg="{{command_release.stdout_lines[1]}}"
